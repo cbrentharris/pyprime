@@ -9,8 +9,8 @@ class Prime:
     """
 
     @classmethod
-    u""" is prime can be changed to use desired check function """
     def is_prime(cls, n):
+        u""" is prime can be changed to use desired check function """
         return cls.probabilistic_primality_test(n)
 
     @classmethod
