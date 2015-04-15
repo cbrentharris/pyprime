@@ -38,6 +38,8 @@ class Prime:
         while n_minus_one % 2 == 0:
             if pow(base, n_minus_one, n) not in [1, n - 1]:
                 return False
+            if pow(base, n_minus_one, n) == n - 1:
+                return True
             n_minus_one /= 2
 
         #Last check when (n - 1) = t
